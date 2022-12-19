@@ -11,7 +11,7 @@ np.set_printoptions(linewidth=400)
 """
 For the Minesweeper Game, instead of learning the expected discounted reward given a state action pair (Q(s, a)), it 
 should be easier to directly learn the reward function r(s, a). Taking a greedy action in a minesweeper state does not
-affect long term rewards. I refer to this as Deep Reward Learning (DRN)
+affect long term rewards. I refer to this as Deep Reward Learning (DRN). This is similar to DQN with gamma = 0.
 Rewards from Minesweeper environment: 
 1 if action does not cause episode termination OR all mines found, 
 0 if action selects mine OR selects position that is already known (useless action, used instead of an action mask)
